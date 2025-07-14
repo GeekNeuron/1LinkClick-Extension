@@ -1,0 +1,4 @@
+background.js:13 Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'local')
+    at background.js:13:26
+popup.js:2 Uncaught TypeError: Cannot read properties of undefined (reading 'local')
+    at HTMLDocument.<anonymous> (popup.js:2:20)
