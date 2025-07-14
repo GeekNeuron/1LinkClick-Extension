@@ -1,8 +1,6 @@
 # 1LinkClick Extension
 
-    An extension to automatically discover and categorize downloadable links on web pages.
-  </p>
-</div>
+An extension to automatically discover and categorize downloadable links on web pages.
 
 ---
 
