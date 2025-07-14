@@ -1,9 +1,5 @@
 # 1LinkClick Extension
 
-<div align="center">
-  <img src="https://i.imgur.com/SHuR1w5.png" alt="1LinkClick Logo" width="150"/>
-  <h1>1LinkClick</h1>
-  <p>
     An extension to automatically discover and categorize downloadable links on web pages.
   </p>
 </div>
