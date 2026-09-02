@@ -48,12 +48,17 @@ body, html {
 .header {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centered header */
+    justify-content: space-between;
     padding: 10px;
     margin-bottom: 10px;
     background-color: var(--header-bg);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -66,6 +71,32 @@ body, html {
     font-size: 1.1em;
     margin: 0;
     font-weight: 600;
+}
+
+.rescan-btn {
+    background: none;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    font-size: 1.1em;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--primary-color);
+    transition: background-color 0.2s ease, transform 0.3s ease;
+}
+
+.rescan-btn:hover:not(:disabled) {
+    background-color: var(--link-hover-bg);
+}
+
+.rescan-btn:active:not(:disabled) {
+    transform: rotate(180deg);
+}
+
+.rescan-btn:disabled {
+    opacity: 0.5;
+    cursor: default;
 }
 
 .main-content {

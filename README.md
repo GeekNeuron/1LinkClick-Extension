@@ -10,7 +10,11 @@ An extension to automatically discover and categorize downloadable links on web 
 
 ## ✨ Features
 
-* **🔍 Automatic Scanning:** Links are identified as soon as the page fully loads.
+* **🔍 Automatic Scanning:** Links are identified as soon as the page fully loads, including inside same-permission iframes and open Shadow DOM subtrees.
+* **🧲 Deep Detection:** Also catches `<video>`/`<audio>`/`<source>`/`<img>`/`<object>` sources, common lazy-load attributes (`data-src`, `data-href`, ...), and file extensions hidden inside query strings (e.g. `/download?file=movie.mp4`).
+* **⏱️ Live Watching:** Keeps watching the page for lazily-loaded content (infinite scroll, delayed rendering) and updates results automatically, without needing a manual rescan.
+* **🔄 Manual Rescan:** A rescan button also lets you force a fresh scan on demand.
+* **🗂️ Per-Tab Results:** Each tab keeps its own scan results, so switching tabs never shows another tab's links.
 * **📂 Smart Categorization:** Links are sorted into distinct categories for quicker access.
 * **🎨 Modern UI:** A beautiful design featuring an animated background, rounded corners, and clean icons.
 * **📋 One-Click Copy:** Each link has a dedicated copy button to quickly send it to your clipboard.

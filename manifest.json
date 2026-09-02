@@ -1,13 +1,18 @@
 {
   "manifest_version": 3,
   "name": "1LinkClick",
-  "version": "1.2",
+  "version": "1.3",
   "description": "Scans and categorizes downloadable links.",
   "permissions": [
     "activeTab",
     "scripting",
     "storage",
-    "webNavigation"
+    "webNavigation",
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
   ],
   "background": {
     "service_worker": "background.js"
